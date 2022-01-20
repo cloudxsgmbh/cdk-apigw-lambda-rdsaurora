@@ -5,17 +5,21 @@
     "cdk-apigw-lambda-rdsaurora": "bin/cdk-apigw-lambda-rdsaurora.js"
   },
   "scripts": {
+    "buildLambda": "tsc ./lib/lambda/myLambdaFunction/index.ts",
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.90",
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
+    "aws-cdk": "2.8.0",
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1060.0",
     "jest": "^26.4.2",
     "ts-jest": "^26.2.0",
-    "aws-cdk": "2.8.0",
     "ts-node": "^9.0.0",
     "typescript": "~3.9.7"
   },
